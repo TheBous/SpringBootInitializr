@@ -19,9 +19,7 @@ public class AmiciController
     public AmiciDAO repo;
 
     @RequestMapping(value = "/demo", method = RequestMethod.POST)
-    public AmiciDTO getIndex(@RequestBody AmiciDTO amici){
-
+    public void getIndex(@RequestBody AmiciDTO amici){
         repo.save(AmiciENTITY.builder().Id(amici.getId()).Name(amici.getName()).Surname(amici.getSurname()).build());
-        return amici;
     }
 }

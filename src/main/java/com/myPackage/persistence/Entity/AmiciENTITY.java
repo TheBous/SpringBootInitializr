@@ -16,6 +16,7 @@ import javax.persistence.*;
 public class AmiciENTITY {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer Id;
 
     @Column
@@ -24,6 +25,5 @@ public class AmiciENTITY {
 
     @Column
     private String Surname;
-
-
+        
 }
