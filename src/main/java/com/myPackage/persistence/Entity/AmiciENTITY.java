@@ -1,7 +1,6 @@
 package com.myPackage.persistence.Entity;
 
 
-import jdk.nashorn.internal.objects.annotations.Constructor;
 import lombok.*;
 
 import javax.persistence.*;
@@ -25,5 +24,5 @@ public class AmiciENTITY {
 
     @Column
     private String Surname;
-        
+
 }
