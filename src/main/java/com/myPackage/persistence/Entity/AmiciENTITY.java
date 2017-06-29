@@ -5,6 +5,7 @@ import lombok.*;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by thebous on 26/06/17.
@@ -25,4 +26,6 @@ public class AmiciENTITY {
     @Column
     private String surname;
 
+    @OneToMany(mappedBy="owner")
+    private List<TelefonoENTITY> phones;
 }
