@@ -1,28 +1,25 @@
 package com.myPackage.persistence.Entity;
 
-
 import lombok.*;
 
 import javax.persistence.*;
 
 /**
- * Created by thebous on 26/06/17.
+ * Created by thebous on 29/06/17.
  */
-
 @Entity
-@Table(name = "Amici")
+@Table(name = "gatti")
 @Getter @Setter @Builder @NoArgsConstructor @AllArgsConstructor
-public class AmiciENTITY {
+public class GattiENTITY {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Column
+    @Column(name = "nickname")
     private String name;
 
-
     @Column
-    private String surname;
+    private int age;
 
 }

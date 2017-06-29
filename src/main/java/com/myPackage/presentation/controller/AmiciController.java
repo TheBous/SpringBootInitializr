@@ -21,13 +21,13 @@ public class AmiciController
     public AmiciDAO repo;
 
     @Autowired
-    public AmiciController(AmiciDAO repo) {
-        this.repo = repo;
+    public AmiciController(AmiciDAO daoAmici) {
+        this.repo = daoAmici;
     }
 
     @RequestMapping(value = "/demo", method = RequestMethod.POST)
     public void getIndex(@RequestBody AmiciDTO amici){
-        repo.save(AmiciENTITY.builder().Id(amici.getId()).Name(amici.getName()).Surname(amici.getSurname()).build());
+        repo.save(AmiciENTITY.builder().id(amici.getId()).name(amici.getName()).surname(amici.getSurname()).build());
     }
 
 
@@ -35,4 +35,12 @@ public class AmiciController
     public List<AmiciENTITY> findAmiciEntities(){
         return (List<AmiciENTITY>) this.repo.findAll();
     }
+
+
+    @RequestMapping(value = "/findAmiciByName", method = RequestMethod.GET)
+    @ResponseBody
+    public List<AmiciENTITY> findAmiciByName(@RequestParam String name){
+        return this.repo.findAmiciEntitiesByName(name);
+    }
+
 }

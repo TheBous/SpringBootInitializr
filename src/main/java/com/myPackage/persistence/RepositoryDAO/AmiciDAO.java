@@ -15,4 +15,7 @@ import java.util.List;
 @Transactional
 public interface AmiciDAO extends PagingAndSortingRepository<AmiciENTITY, Integer>{
 
+    public List<AmiciENTITY> findAmiciEntitiesByName(String name);
+
+
 }
