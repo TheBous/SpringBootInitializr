@@ -31,7 +31,7 @@ public class CaneENTITY implements Serializable{
     private PadroneENTITY padrone;
 
 
-    class CaneENTITYPrimaryKey implements Serializable{
+    public class CaneENTITYPrimaryKey implements Serializable{
 
         @Column
         private int primo;
