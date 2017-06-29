@@ -7,4 +7,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
  * Created by thebous on 29/06/17.
  */
 public interface CaneDAO extends PagingAndSortingRepository<CaneENTITY, CaneENTITY.CaneENTITYPrimaryKey> {
+
+
+
 }
