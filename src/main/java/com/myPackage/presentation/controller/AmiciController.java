@@ -7,10 +7,9 @@ package com.myPackage.presentation.controller;
 import com.myPackage.persistence.Entity.AmiciENTITY;
 import com.myPackage.persistence.RepositoryDAO.AmiciDAO;
 import com.myPackage.presentation.dto.AmiciDTO;
+import org.hibernate.service.spi.InjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -29,7 +28,6 @@ public class AmiciController
     public void getIndex(@RequestBody AmiciDTO amici){
         repo.save(AmiciENTITY.builder().id(amici.getId()).name(amici.getName()).surname(amici.getSurname()).build());
     }
-
 
     @RequestMapping(value = "/findAmici", method = RequestMethod.POST)
     public List<AmiciENTITY> findAmiciEntities(){

@@ -3,9 +3,7 @@ package com.myPackage.persistence.RepositoryDAO;
 import com.myPackage.persistence.Entity.AmiciENTITY;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
-
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

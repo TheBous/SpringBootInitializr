@@ -1,6 +1,5 @@
 package com.myPackage.persistence.RepositoryDAO;
 
-import com.myPackage.persistence.Entity.AmiciENTITY;
 import com.myPackage.persistence.Entity.GattiENTITY;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
