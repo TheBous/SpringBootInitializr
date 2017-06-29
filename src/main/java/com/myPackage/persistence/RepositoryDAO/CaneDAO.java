@@ -8,6 +8,4 @@ import org.springframework.data.repository.PagingAndSortingRepository;
  */
 public interface CaneDAO extends PagingAndSortingRepository<CaneENTITY, CaneENTITY.CaneENTITYPrimaryKey> {
 
-
-
 }
