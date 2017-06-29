@@ -1,4 +1,4 @@
-package com.myPackage.business;
+package com.myPackage.business.Converter;
 
 import com.myPackage.persistence.Entity.GattiENTITY;
 import com.myPackage.presentation.dto.GattiDTO;

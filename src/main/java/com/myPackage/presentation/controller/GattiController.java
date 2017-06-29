@@ -1,6 +1,6 @@
 package com.myPackage.presentation.controller;
 
-import com.myPackage.business.GattiConverter;
+import com.myPackage.business.Converter.GattiConverter;
 
 import com.myPackage.persistence.RepositoryDAO.GattiDAO;
 import com.myPackage.presentation.dto.GattiDTO;

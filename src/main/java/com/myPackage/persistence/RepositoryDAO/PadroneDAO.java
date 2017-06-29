@@ -6,5 +6,5 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 /**
  * Created by thebous on 29/06/17.
  */
-public interface PadronDAO extends PagingAndSortingRepository<PadroneENTITY, Integer> {
+public interface PadroneDAO extends PagingAndSortingRepository<PadroneENTITY, Integer> {
 }
